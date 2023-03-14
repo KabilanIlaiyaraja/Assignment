@@ -36,7 +36,7 @@ public class DuplicateLead {
 		 driver.findElement(By.id("createLeadForm_companyName")).sendKeys("Test Leaf Solutions");
 		 driver.findElement(By.id("createLeadForm_firstName")).clear();
 		 driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Bharathi");
-		 driver.findElement(By.xpath("//input[@class='smallSubmit']")).click();
+		 driver.findElement(By.className("smallSubmit")).click();
 		 String title = driver.getTitle();
 		 System.out.println(title);
 		 if (text.equals(title)) {

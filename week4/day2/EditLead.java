@@ -31,7 +31,7 @@ public class EditLead {
 		 driver.findElement(By.linkText("Edit")).click();
 		 driver.findElement(By.id("updateLeadForm_description")).clear();
 		 driver.findElement(By.id("updateLeadForm_importantNote")).sendKeys("Quality Assurance");
-		 driver.findElement(By.xpath("(//input[@class='smallSubmit'])[1]")).click();
+		 driver.findElement(By.className("smallSubmit")).click();
 		 String title = driver.getTitle();
 		 System.out.println(title);
 		 
